@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>게시판</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-50">
+    <div th:replace="~{fragments/header :: header}"></div>
+    <main class="mx-auto max-w-5xl p-6">
+        <h1 class="mb-5 text-2xl font-bold">게시글 목록</h1>
+        <p th:if="${errorMessage}" th:text="${errorMessage}" class="mb-4 rounded-lg bg-red-50 p-3 text-sm text-red-600"></p>
+        <section class="rounded-xl bg-white p-5 shadow">
+        <p th:if="${articles.empty}">등록된 게시글이 없습니다.</p>
+        <table th:unless="${articles.empty}" class="w-full text-left">
+          <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>작성일</th>
+          </tr>
+          <tr th:each="article : ${articles.content}">
+            <td th:text="${article.id}"></td>
+            <td>
+              <a
+                th:href="@{/articles/{id}(id=${article.id})}"
+                th:text="${article.title}"
+              ></a>
+            </td>
+            <td th:text="${article.author.name}"></td>
+            <td
+              th:text="${#temporals.format(article.createdAt, 'yyyy-MM-dd HH:mm')}"
+            ></td>
+          </tr>
+        </table>
+      </section>
+      <nav
+        th:if="${articles.totalPages > 1}"
+        class="mt-6 flex items-center justify-center gap-2"
+        aria-label="페이지 이동"
+      >
+        <a
+          th:if="${!articles.first}"
+          th:href="@{/articles(page=${articles.number - 1},size=${articles.size})}"
+          class="rounded border px-3 py-2 hover:bg-slate-100"
+        >이전</a>
+        <span
+          th:if="${articles.first}"
+          class="cursor-not-allowed rounded border px-3 py-2 text-slate-400"
+        >이전</span>
+        <a
+          th:each="pageNumber : ${#numbers.sequence(0, articles.totalPages - 1)}"
+          th:href="@{/articles(page=${pageNumber},size=${articles.size})}"
+          th:text="${pageNumber + 1}"
+          th:classappend="${pageNumber == articles.number} ? ' bg-blue-600 text-white' : ' hover:bg-slate-100'"
+          class="rounded border px-3 py-2"
+        ></a>
+        <a
+          th:if="${!articles.last}"
+          th:href="@{/articles(page=${articles.number + 1},size=${articles.size})}"
+          class="rounded border px-3 py-2 hover:bg-slate-100"
+        >다음</a>
+        <span
+          th:if="${articles.last}"
+          class="cursor-not-allowed rounded border px-3 py-2 text-slate-400"
+        >다음</span>
+      </nav>
+    </main>
+  </body>
+</html>

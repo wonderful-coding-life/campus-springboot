@@ -1,0 +1,12 @@
+{
+  "stages": [
+    { "stage": 1, "name": "Entity and schema.sql", "status": "done" },
+    { "stage": 2, "name": "Repository", "status": "done" },
+    { "stage": 3, "name": "Service", "status": "done" },
+    { "stage": 4, "name": "Spring Security", "status": "done" },
+    { "stage": 5, "name": "Form and Validation", "status": "done" },
+    { "stage": 6, "name": "Controller", "status": "done" },
+    { "stage": 7, "name": "Thymeleaf views", "status": "done" },
+    { "stage": 8, "name": "Authorization and exception handling", "status": "done" }
+  ]
+}
