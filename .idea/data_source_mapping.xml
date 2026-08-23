@@ -5,5 +5,7 @@
     <file url="file://$PROJECT_DIR$/bbs-completion/support/schema.sql" value="e406029d-bdde-4215-bcb3-58be133444bf" />
     <file url="file://$PROJECT_DIR$/jdbc/support/data.sql" value="039ac034-8452-44e8-9915-edb4a7db0dbd" />
     <file url="file://$PROJECT_DIR$/jdbc/support/schema.sql" value="039ac034-8452-44e8-9915-edb4a7db0dbd" />
+    <file url="file://$PROJECT_DIR$/mybatis/support/data.sql" value="039ac034-8452-44e8-9915-edb4a7db0dbd" />
+    <file url="file://$PROJECT_DIR$/mybatis/support/schema.sql" value="039ac034-8452-44e8-9915-edb4a7db0dbd" />
   </component>
 </project>

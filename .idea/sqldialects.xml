@@ -5,5 +5,7 @@
     <file url="file://$PROJECT_DIR$/bbs-completion/support/schema.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/jdbc/support/data.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/jdbc/support/schema.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/mybatis/support/data.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/mybatis/support/schema.sql" dialect="MySQL" />
   </component>
 </project>
