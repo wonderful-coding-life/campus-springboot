@@ -32,16 +32,4 @@ public class Article {
     @ManyToOne
     @JoinColumn(name = "member_id")
     private Member member;
-
-    @PrePersist
-    public void prePersist() {
-        LocalDateTime now = LocalDateTime.now();
-        this.created = now;
-        this.updated = now;
-    }
-
-    @PreUpdate
-    public void preUpdate() {
-        this.updated = LocalDateTime.now();
-    }
 }

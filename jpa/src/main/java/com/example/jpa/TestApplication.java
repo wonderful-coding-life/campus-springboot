@@ -13,6 +13,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 import static org.springframework.data.domain.Sort.Direction.DESC;
@@ -42,6 +43,8 @@ public class TestApplication implements ApplicationRunner {
                 var article = Article.builder()
                         .title("제목 " + i)
                         .description("본문 " + i)
+                        .created(LocalDateTime.now())
+                        .updated(LocalDateTime.now())
                         .member(member).build();
                 articleRepository.save(article);
             }
