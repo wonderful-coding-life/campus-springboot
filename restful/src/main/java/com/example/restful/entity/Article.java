@@ -21,7 +21,7 @@ public class Article {
     private Long id;
     @Column(name="title")
     private String title;
-    @Column(name="description")
+    @Column(name="description", length = 4096)
     private String description;
     @Column(name="created")
     private LocalDateTime created;
