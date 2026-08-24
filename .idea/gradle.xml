@@ -76,6 +76,14 @@
           </set>
         </option>
       </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/restful" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/restful" />
+          </set>
+        </option>
+      </GradleProjectSettings>
     </option>
   </component>
 </project>
