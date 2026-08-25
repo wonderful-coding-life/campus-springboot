@@ -93,6 +93,22 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/security-completion" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/security-completion" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/security-starter" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/security-starter" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/thymeleaf" />
         <option name="modules">
           <set>

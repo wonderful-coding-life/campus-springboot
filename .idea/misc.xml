@@ -6,6 +6,8 @@
     <file type="web" url="file://$PROJECT_DIR$/bbs-completion" />
     <file type="web" url="file://$PROJECT_DIR$/jdbc" />
     <file type="web" url="file://$PROJECT_DIR$/restful" />
+    <file type="web" url="file://$PROJECT_DIR$/security-completion" />
+    <file type="web" url="file://$PROJECT_DIR$/security-starter" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_26" project-jdk-name="temurin-21" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
