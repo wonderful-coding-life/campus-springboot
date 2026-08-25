@@ -84,6 +84,14 @@
           </set>
         </option>
       </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/thymeleaf" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/thymeleaf" />
+          </set>
+        </option>
+      </GradleProjectSettings>
     </option>
   </component>
 </project>
