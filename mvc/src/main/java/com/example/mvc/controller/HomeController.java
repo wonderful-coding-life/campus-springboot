@@ -1,6 +1,6 @@
 package com.example.mvc.controller;
 
-import com.example.mvc.dto.MemberForm;
+import com.example.mvc.form.MemberForm;
 import com.example.mvc.model.Member;
 import com.example.mvc.repository.MemberRepository;
 import jakarta.validation.Valid;

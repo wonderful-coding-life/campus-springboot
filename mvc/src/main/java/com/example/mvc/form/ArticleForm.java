@@ -1,4 +1,4 @@
-package com.example.mvc.dto;
+package com.example.mvc.form;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ArticleDto {
+public class ArticleForm {
     private Long id;
     private Long memberId;
     private String name;

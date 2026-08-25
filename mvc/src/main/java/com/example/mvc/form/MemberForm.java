@@ -1,4 +1,4 @@
-package com.example.mvc.dto;
+package com.example.mvc.form;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
