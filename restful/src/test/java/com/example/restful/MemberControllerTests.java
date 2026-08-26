@@ -11,8 +11,7 @@ import org.springframework.test.json.JsonCompareMode;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @SpringBootTest
 @AutoConfigureMockMvc
@@ -43,6 +42,7 @@ public class MemberControllerTests {
                             "name": "윤서준",
                             "age": 10
                         }
-                """, JsonCompareMode.LENIENT));
+                """, JsonCompareMode.LENIENT))
+                .andExpect(jsonPath("$.id").isNumber());
     }
 }
