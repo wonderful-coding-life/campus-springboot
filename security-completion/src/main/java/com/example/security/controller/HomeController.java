@@ -15,11 +15,6 @@ public class HomeController {
     public String getHome(Authentication authentication) {
         if (authentication != null) {
             log.info("name {}", authentication.getName());
-            log.info("authorities {}", authentication
-                    .getAuthorities()
-                    .stream()
-                    .map(GrantedAuthority::getAuthority)
-                    .collect(Collectors.joining(" ")));
         } else {
             log.info("authentication null");
         }
