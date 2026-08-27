@@ -56,11 +56,10 @@ public class SecurityConfig {
     public UserDetailsService userDetailsService(MemberRepository memberRepository) {
         return username -> {
             var member = memberRepository.findByName(username).orElseThrow(() -> new UsernameNotFoundException(username));
-            var authorities = Arrays.stream(member.getAuthorities().split(",")).map(String::trim).toArray(String[]::new);
             return User.builder()
                     .username(member.getName())
                     .password(member.getPassword())
-                    .authorities(authorities)
+                    .authorities(member.getAuthority())
                     .build();
         };
     }

@@ -37,12 +37,12 @@ public class DataInitializer implements ApplicationRunner {
                     Member.builder()
                             .name("seojun")
                             .password(passwordEncoder.encode("12345678"))
-                            .authorities("ROLE_USER")
+                            .authority("ROLE_USER")
                             .build(),
                     Member.builder()
                             .name("kwangcheol")
                             .password(passwordEncoder.encode("12345678"))
-                            .authorities("ROLE_USER, ROLE_ADMIN")
+                            .authority("ROLE_ADMIN")
                             .build()
             );
             memberRepository.saveAll(members);
