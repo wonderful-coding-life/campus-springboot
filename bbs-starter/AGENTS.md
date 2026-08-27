@@ -11,7 +11,7 @@
 - Spring Data JPA
 - Spring Security
 - Thymeleaf
-- MariaDB
+- MySQL
 - Gradle
 - Lombok
 - Tailwind CSS
@@ -80,11 +80,9 @@ Controller → Service → Repository
 
 ---
 
-## 6. Service 및 트랜잭션 규칙
+## 6. Service 규칙
 
 - Service 클래스에는 `@Service`를 사용한다.
-- 데이터 변경 작업에는 `@Transactional`을 적용한다.
-- 조회 작업에는 `@Transactional(readOnly = true)`를 적용한다.
 - 존재하지 않는 데이터, 중복 데이터, 권한 위반은 Service에서 검사한다.
 - 게시글 작성자 권한 검사는 Controller가 아니라 Service에서 처리한다.
 

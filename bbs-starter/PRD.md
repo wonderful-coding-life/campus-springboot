@@ -79,17 +79,27 @@
 
 ## 5. 데이터베이스 요구사항
 
-- MariaDB 문법으로 `support/schema.sql`을 작성한다.
+- MySQL 문법으로 `support/schema.sql`을 작성한다.
 - 스키마는 운영자가 수동으로 생성하며 애플리케이션이 자동 실행하지 않는다.
 - `schema.sql`은 Entity 매핑과 일치해야 한다.
 
-애플리케이션 설정 파일에 데이터베이스 접속 정보는 다음 환경 변수로 설정한다.
+### 애플리케이션 설정
+
+- 기본 애플리케이션은 MySQL을 사용한다.
+- 데이터베이스 접속 정보는 환경 변수로 설정한다.
+- `src/main/resources/application.properties`에 다음 환경 변수를 사용한다.
 
 | 환경 변수 | 설명 |
 |---|---|
 | `DB_URL` | 데이터베이스 JDBC URL |
 | `DB_USER` | 데이터베이스 사용자 이름 |
 | `DB_PASS` | 데이터베이스 비밀번호 |
+
+### 테스트 설정
+
+- 테스트에서는 H2 인메모리 데이터베이스를 사용한다.
+- 테스트 설정은 `src/test/resources/application.properties`에 작성한다.
+- 별도의 MySQL 데이터베이스 없이 `./gradlew test`가 실행되어야 한다.
 
 ---
 

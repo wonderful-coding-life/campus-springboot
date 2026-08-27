@@ -4,6 +4,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/aop" />
     <file type="web" url="file://$PROJECT_DIR$/bbs-completion" />
+    <file type="web" url="file://$PROJECT_DIR$/bbs-starter" />
     <file type="web" url="file://$PROJECT_DIR$/jdbc" />
     <file type="web" url="file://$PROJECT_DIR$/restful" />
     <file type="web" url="file://$PROJECT_DIR$/security-completion" />
