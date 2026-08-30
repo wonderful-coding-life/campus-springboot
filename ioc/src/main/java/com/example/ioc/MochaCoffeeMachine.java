@@ -3,9 +3,9 @@ package com.example.ioc;
 import org.springframework.stereotype.Component;
 
 @Component
-public class EspressoMachine implements CoffeeMachine {
+public class MochaCoffeeMachine implements CoffeeMachine {
     @Override
     public void brew() {
-        System.out.println("Brewing coffee with Espresso Machine");
+        System.out.println("Brewing coffee with Mocha Coffee Machine");
     }
 }

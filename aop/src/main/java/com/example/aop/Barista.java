@@ -1,18 +1,16 @@
-package com.example.ioc;
+package com.example.aop;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
-
-import java.util.List;
 
 @Component
 public class Barista {
     @Autowired
-    private List<CoffeeMachine> coffeeMachines;
+    private CoffeeMachine coffeeMachine;
 
+    @Async
     public void makeCoffees() {
-        for (CoffeeMachine coffeeMachine : coffeeMachines) {
-            coffeeMachine.brew();
-        }
+        coffeeMachine.brew();
     }
 }

@@ -6,6 +6,5 @@ public class Barista {
     }
 
     public void makeCoffee() {
-        System.out.println(coffeeMachine.brew());
-    }
+        coffeeMachine.brew();    }
 }
