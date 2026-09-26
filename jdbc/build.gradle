@@ -10,7 +10,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.mysql:mysql-connector-j:9.7.0'
+    implementation 'org.mariadb.jdbc:mariadb-java-client:3.5.10'
     // lombok
     compileOnly 'org.projectlombok:lombok:1.18.46'
     annotationProcessor 'org.projectlombok:lombok:1.18.46'

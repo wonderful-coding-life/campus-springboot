@@ -6,7 +6,7 @@ import java.sql.*;
 public class Main {
     public static void main(String[] args) throws SQLException {
         var main = new Main();
-        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "myuser", "mypass");
+        Connection connection = DriverManager.getConnection("jdbc:mariadb://localhost:3306/mydb", "myuser", "mypass");
         main.selectAll(connection);
         var member = main.selectMemberById(connection, 1L);
         log.info("회원 {}", member);
