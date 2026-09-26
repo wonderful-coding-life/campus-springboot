@@ -3,5 +3,6 @@
   <component name="DataSourcePerFileMappings">
     <file url="file://$PROJECT_DIR$/bbs-completion/support/data.sql" value="e406029d-bdde-4215-bcb3-58be133444bf" />
     <file url="file://$PROJECT_DIR$/bbs-completion/support/schema.sql" value="e406029d-bdde-4215-bcb3-58be133444bf" />
+    <file url="file://$PROJECT_DIR$/mybatis/support/data.sql" value="76b88ac2-c02c-4c46-af27-144e94ba1ea7" />
   </component>
 </project>
