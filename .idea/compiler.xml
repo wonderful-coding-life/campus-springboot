@@ -7,8 +7,8 @@
         <processorPath useClasspath="false">
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.46/a5cfe99fdf320e84955ef653f2ce1bf789d11385/lombok-1.18.46.jar" />
         </processorPath>
-        <module name="jpa.test" />
-        <module name="jpa.main" />
+        <module name="bbs-starter.test" />
+        <module name="bbs-starter.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -31,6 +31,7 @@
       <module name="bbs-starter.test" options="-parameters" />
       <module name="bbs.main" options="-parameters" />
       <module name="bbs.test" options="-parameters" />
+      <module name="com.example.mybatis.main" options="-parameters" />
       <module name="ioc" options="-parameters" />
       <module name="ioc.main" options="-parameters" />
       <module name="ioc.test" options="-parameters" />
