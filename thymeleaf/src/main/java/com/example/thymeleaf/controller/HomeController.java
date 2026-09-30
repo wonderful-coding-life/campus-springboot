@@ -13,6 +13,11 @@ import java.util.List;
 @Controller
 @Slf4j
 public class HomeController {
+    @GetMapping
+    public String getHome() {
+        return "home";
+    }
+
     @GetMapping("/model")
     public String getModel(Model model) {
         model.addAttribute("name", "윤광철");

@@ -8,13 +8,13 @@
 
 <h2>링크 표현식</h2>
 
-<a th:href="@{/link}">매개변수 없는 링크</a>
-<br>
-<a th:href="@{/link(id=3)}">id가 3인 링크</a>
+<a th:href="@{/link}">매개변수 없는 링크</a><br>
+<a th:href="@{/link?id=3}">id가 3인 링크</a><br>
+<a th:href="@{/link(id=10)}">id가 10인 링크</a><br>
 
 <p>
     전달받은 id:
-    <span th:text="${id}">3</span>
+    <span th:text="${id}">0</span>
 </p>
 
 </body>
