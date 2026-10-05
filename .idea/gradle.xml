@@ -28,6 +28,22 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/coffee-app" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/coffee-app" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/coffee-starter" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/coffee-starter" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/di" />
         <option name="modules">
           <set>
